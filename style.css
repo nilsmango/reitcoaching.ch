@@ -163,6 +163,10 @@ header {
   padding: 0.5em 1.5em 2em 1.5em;
 }
 
+.uebermich-column2 {
+  display: none;
+}
+
 .main-philosophie {
   background-color: var(--clr-dark);
   padding: 0.5em 1.5em 2em 1.5em;
@@ -278,6 +282,7 @@ p {
     margin-left: 1.5em;
   }
 
+
   .referenzen-collumns {
     display: flex;
     justify-content: space-between;
@@ -291,6 +296,10 @@ p {
 
   }
 
+  .main-referenzen {
+    padding-bottom: 1.5em;
+  }
+
   .coaching-columns {
     display: grid;
     grid-template-columns: minmax(5em, 0.47fr) minmax(4em, 0.47fr);
@@ -301,6 +310,16 @@ p {
 
 
 @media (min-width: 800px) {
+  main, header  {
+    margin: 0 auto;
+    max-width: 1200px;
+    /* padding-left: 0; */
+  }
+
+
+
+
+
   .coaching-columns {
     display: flex;
     justify-content: space-between;
@@ -312,6 +331,7 @@ p {
     display: flex;
     justify-content: center;
     margin: 0;
+    /* margin-left: -4em; */
   }
   .nav2 {
     display: flex;
