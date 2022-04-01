@@ -1,0 +1,326 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: #428F4E;
+  --clr-dark: #2D2D2D;
+  --clr-grey: #C4C4C4;
+  --clr-light: #FFF;
+  --fw-normal: 400;
+  --fw-semibold: 500;
+  --fw-bold: 700;
+  --fs-normal: 1.125rem;
+  --fs-header: 2.25rem;
+  --grid: 1fr;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fs-normal);
+  color: var(--clr-dark);
+  line-height: 1.6rem;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  margin-bottom: -0.2em;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-header);
+  font-weight: var(--fw-bold);
+}
+
+h3 {
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-semibold);
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.8em 1.2em;
+  font-weight: var(--fw-semibold);
+}
+
+.btn:hover {
+  background-color: var(--clr-dark);
+
+}
+
+.btn--white {
+  background-color: var(--clr-light);
+  color: var(--clr-primary);
+}
+
+.btn--white:hover, .btn--white2:hover {
+  background-color: var(--clr-grey);
+}
+
+.btn--white2 {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+
+.btn--green {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+}
+
+.btn--round {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  padding: 10px 14px;
+  border-radius: 50px;
+}
+
+footer {
+  background-color: var(--clr-primary);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1.5em 1.5em 0.5em 1.5em;
+}
+
+.nav__list {
+  text-align: right;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__list-item {
+  padding-bottom: 1em;
+}
+
+.nav__link {
+  text-decoration: none;
+  /* color: var(--clr-dark); */
+}
+
+.nav__list-item:hover {
+  /* font-weight: var(--fw-semibold); */
+  color: var(--clr-grey);
+}
+
+.nav2__list {
+  padding: 1.5em 1.5em 0 1.5em;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  color: var(--clr-light);
+}
+
+.nav2__list-item {
+  padding-bottom: 0.5em;
+}
+
+
+
+.nav2__link {
+  text-decoration: none;
+
+}
+.logo {
+  height: 150px;
+  width: 118px;
+}
+
+
+.main-reitcoaching {
+  background-image: url(/images/small/fernando-puente-5XCIhfb_Dpc-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 0, left;
+  padding: 1.5em 6em 6em 1.5em;
+  display: grid;
+  grid-template-columns: minmax(190px, 5ch) minmax(1em, 1fr);
+  justify-items: start;
+}
+.main-reitcoaching > * { grid-column: 1 / 2; }
+
+.main-uebermich {
+  background-color: var(--clr-primary);
+  padding: 0.5em 1.5em 2em 1.5em;
+}
+
+.main-philosophie {
+  background-color: var(--clr-dark);
+  padding: 0.5em 1.5em 2em 1.5em;
+}
+
+.main-light {
+  color: var(--clr-light);
+}
+
+.main__semibold {
+  font-weight: var(--fw-semibold);
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.main__name {
+  font-weight: var(--fw-semibold);
+  margin-bottom: -0.8em;
+}
+
+.main-referenzen {
+  padding: 0.5em 1.5em 0 1.5em;
+}
+
+.referenzen-image {
+  width: 200px;
+  height: 200px;
+  margin-top: 2em;
+  margin-bottom: -0.5em;
+  border-radius: 50%;
+}
+
+.buchen-image {
+  width: 240px;
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+
+.main-buchen {
+  padding: 0.5em 1.5em 2em 1.5em;
+}
+
+.buch-btn {
+  margin-bottom: 0.5em;
+}
+
+.sq-btn {
+  margin-bottom: 0.5em;
+}
+
+.stars {
+  width: 20px;
+  margin-bottom: -1em;
+}
+.icons {
+  width: 18px;
+  padding-right: 3px;
+}
+
+.stars-checked {
+ filter: invert(90%) sepia(29%) saturate(1052%) hue-rotate(346deg) brightness(101%) contrast(98%);
+}
+.stars-unchecked {
+  filter: invert(97%) sepia(5%) saturate(8%) hue-rotate(314deg) brightness(93%) contrast(84%);
+}
+.copyright {
+  text-align: left;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 1.5em 0 0.25em 2.125em;
+}
+
+@media (min-width: 600px) {
+    .nav__list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-top: 2.8em;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .nav__list-item {
+      padding: 0.8em;
+    }
+
+    header {
+      padding-bottom: 1.3em;
+    }
+
+  .main-reitcoaching {
+    display: grid;
+    grid-template-columns: minmax(160px, 190px) minmax(1em, 1fr);
+    justify-items: start;
+    background-image: url(/images/fernando-puente-5XCIhfb_Dpc-unsplash.jpg);
+    padding: 4em 6em 8em 6em;
+  }
+  .main-reitcoaching > * { grid-column: 1 / 2; }
+
+  .collums {
+    /* padding-top: 2em; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    /* display: grid;
+    grid-template-columns: minmax(6em, 0.4fr) minmax(6em, 0.4fr); */
+    /* justify-items: start; */
+  }
+  .main-philosophie {
+    margin-left: 1.5em;
+  }
+
+  .referenzen-collumns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 600px;
+  }
+
+  .referenzen-collumn2 {
+    margin-left: 1.5em;
+    padding-top: 3em;
+
+  }
+
+  .coaching-columns {
+    display: grid;
+    grid-template-columns: minmax(5em, 0.47fr) minmax(4em, 0.47fr);
+    justify-content: left;
+    margin: 0;
+  }
+
+
+
+@media (min-width: 800px) {
+  .coaching-columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 800px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 1.5em;
+  }
+
+  .copyright {
+    padding-top: 2.75em;
+  }
+}
