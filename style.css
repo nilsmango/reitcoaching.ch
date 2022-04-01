@@ -262,7 +262,7 @@ p {
 
   .main-reitcoaching {
     display: grid;
-    grid-template-columns: minmax(160px, 190px) minmax(1em, 1fr);
+    grid-template-columns: minmax(160px, 200px) minmax(1em, 1fr);
     justify-items: start;
     background-image: url(/images/fernando-puente-5XCIhfb_Dpc-unsplash.jpg);
     background-position: bottom, left;
