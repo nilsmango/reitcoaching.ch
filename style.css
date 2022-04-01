@@ -94,6 +94,7 @@ a:hover {
 
 footer {
   background-color: var(--clr-primary);
+  padding-top: 1em;
 }
 
 header {
@@ -264,7 +265,8 @@ p {
     grid-template-columns: minmax(160px, 190px) minmax(1em, 1fr);
     justify-items: start;
     background-image: url(/images/fernando-puente-5XCIhfb_Dpc-unsplash.jpg);
-    padding: 4em 6em 8em 6em;
+    background-position: bottom, left;
+    padding: 6em 6em 8em 6em;
   }
   .main-reitcoaching > * { grid-column: 1 / 2; }
 
@@ -307,6 +309,25 @@ p {
     margin: 0;
   }
 
+  footer {
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+
+  }
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-left: 0;
+  }
+
+}
 
 
 @media (min-width: 800px) {
@@ -327,20 +348,13 @@ p {
     max-width: 800px;
   }
 
-  footer {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    /* margin-left: -4em; */
-  }
-  .nav2 {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-bottom: 1.5em;
-  }
 
-  .copyright {
-    padding-top: 2.75em;
+}
+@media (min-width: 1240px) {
+
+
+  .collums {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
