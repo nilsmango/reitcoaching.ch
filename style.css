@@ -25,7 +25,7 @@ body {
   line-height: 1.6rem;
 }
 
-h1, h2, h3 {
+h1, h2 {
   line-height: 1;
   margin-bottom: -0.2em;
 }
@@ -43,6 +43,7 @@ h2 {
 h3 {
   font-size: var(--fs-normal);
   font-weight: var(--fw-semibold);
+  margin-bottom: -1em;
 }
 
 a {
@@ -101,7 +102,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 1.5em 1.5em 0.5em 1.5em;
+  padding: 1.5em 2em 0.5em 2em;
 }
 
 .nav__list {
@@ -253,6 +254,11 @@ p {
   padding: 1.5em 0 0.25em 2.125em;
 }
 
+.angebot-reitcoaching {
+  margin-top: -3em;
+  margin-bottom: 3.5em;
+}
+
 .kontaktform {
   font-size: var(--fs-normal);
 
@@ -295,7 +301,7 @@ input[type=submit]:hover {
   background-color: var(--clr-dark);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 610px) {
     .nav__list {
       display: flex;
       margin: 0;
@@ -390,6 +396,9 @@ input[type=submit]:hover {
     /* padding-left: 0; */
   }
 
+  header {
+    padding: 1.5em 6em 0.5em 6em;
+  }
 
 
 
