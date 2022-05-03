@@ -115,7 +115,7 @@ header {
   padding-bottom: 1em;
 }
 
-.nav__link {
+.nav__link, .sarah-link {
   text-decoration: none;
   /* color: var(--clr-dark); */
 }
@@ -206,12 +206,30 @@ p {
   padding: 0.5em 1.5em 0 1.5em;
 }
 
-.referenzen-image {
+.referenzen-image, .referenzen-image2 {
   width: 200px;
   height: 200px;
-  margin-top: 2em;
-  margin-bottom: -0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
   border-radius: 50%;
+}
+
+.regina-image {
+  width: 60%;
+  margin-top: 26px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zusammenarbeit-image {
+  width: 400px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buchen-image {
@@ -347,14 +365,30 @@ input[type=submit]:hover {
   .referenzen-collumns {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    max-width: 600px;
+    margin: 0em;
+    max-width: 900px;
   }
 
   .referenzen-collumn2 {
     margin-left: 1.5em;
     padding-top: 3em;
 
+  }
+  .referenzen-collumn3 {
+    margin-left: 1.5em;
+    padding-top: 0em;
+
+  }
+
+.referenzen-image2 {
+  margin-top: 5em;
+}
+
+  .regina-image {
+    float: left;
+  margin-right: 20px;
+  width: 304px;
+  height: 304px;
   }
 
   .main-referenzen {
@@ -399,9 +433,6 @@ input[type=submit]:hover {
   header {
     padding: 1.5em 6em 0.5em 6em;
   }
-
-
-
 
   .coaching-columns {
     display: flex;
